@@ -98,6 +98,34 @@ li:nth-child(even) {
   /* color: red; */
 }
 
-article p:last-child {
+/* Misconception: this won't work */
+article p:first-child {
   color: red;
 }
+
+/* Styling links */
+a:link {
+  /* Only targets which is actual hyperlink */
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  /* 마우스 올릴때 */
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  /* 누를때 */
+  background-color: black;
+  font-style: italic;
+}
+
+/* LVHA */
