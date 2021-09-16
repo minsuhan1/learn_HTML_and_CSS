@@ -128,4 +128,26 @@ a:active {
   font-style: italic;
 }
 
+a {
+  /* pseudo class의 우선순위가 더 높다 */
+  color: red;
+}
+
 /* LVHA */
+
+/* Resolving conflicts */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
