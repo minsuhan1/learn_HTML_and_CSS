@@ -38,9 +38,31 @@ Default: 1
   box-sizing: border-box;
 }
 
+/* 기본 폰트 사이즈 설정 */
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+.test {
+  /* width: 1000px; */
+  background-color: red;
+  max-width: 1000px;
+  /* 1000px보다 화면이 작아지면 자동으로 width를 줄임
+  1000px보다 화면이 커지면 1000px로 고정 */
+
+  max-width: 50rem;
+  padding: 4rem;
+  color: #fff;
+  font-size: 2rem;
+  /* 1 rem = 10px -> 50rem = 500px */
 }
