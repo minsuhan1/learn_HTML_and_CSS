@@ -53,16 +53,13 @@ body {
   color: #555;
 }
 
-.test {
-  /* width: 1000px; */
-  background-color: red;
-  max-width: 1000px;
-  /* 1000px보다 화면이 작아지면 자동으로 width를 줄임
-  1000px보다 화면이 커지면 1000px로 고정 */
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-  max-width: 50rem;
-  padding: 4rem;
-  color: #fff;
-  font-size: 2rem;
-  /* 1 rem = 10px -> 50rem = 500px */
+.hero-img {
+  width: 100%;
 }
